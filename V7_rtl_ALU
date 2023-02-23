@@ -47,7 +47,6 @@ module alu(input [7:0]a_in,b_in,
 		BUF: out= a_in;
 	endcase
   end
-
    //Understand the tri-state logic for actual output
    assign d_out = (oe) ? out : 16'hzzzz;
 		
